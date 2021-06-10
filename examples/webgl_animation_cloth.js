@@ -1,7 +1,7 @@
 /* globals THREE */
 // Example borrowed (and ported) from https://github.com/mrdoob/three.js/blob/master/examples/webgl_animation_cloth.html 
 
-define(['GLOBAL_THREE', 'OrbitControls'], function() {
+define(['REQUIRE_THREE', 'REQUIRE_THREE/OrbitControls'], function() {
   'use strict';
 			/*
 			 * Cloth Simulation using a relaxed constraints solver

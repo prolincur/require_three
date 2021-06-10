@@ -32,8 +32,9 @@ modules.forEach(function(m) {
         if (path.extname(d.name) == '.js') {
             var name = d.name.replace(/\.js$/, '');
             var fpath = d.path.replace(/\.js$/, '');
+            name = 'REQUIRE_THREE/' + name; 
             config.paths[name] = cdnurl + fpath;
-            config.shim[name] =  { deps: ['GLOBAL_THREE'] };
+            config.shim[name] =  { deps: ['REQUIRE_THREE'] };
         }
     });
 });
