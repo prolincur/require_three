@@ -40,6 +40,13 @@ require.config({
         "REQUIRE_THREE/VRMLoader": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/loaders/VRMLoader",
         "REQUIRE_THREE/VTKLoader": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/loaders/VTKLoader",
         "REQUIRE_THREE/XLoader": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/loaders/XLoader",
+        "REQUIRE_THREE/ColladaExporter": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/exporters/ColladaExporter",
+        "REQUIRE_THREE/DRACOExporter": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/exporters/DRACOExporter",
+        "REQUIRE_THREE/GLTFExporter": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/exporters/GLTFExporter",
+        "REQUIRE_THREE/MMDExporter": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/exporters/MMDExporter",
+        "REQUIRE_THREE/OBJExporter": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/exporters/OBJExporter",
+        "REQUIRE_THREE/PLYExporter": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/exporters/PLYExporter",
+        "REQUIRE_THREE/STLExporter": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/exporters/STLExporter",
         "REQUIRE_THREE/DeviceOrientationControls": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/controls/DeviceOrientationControls",
         "REQUIRE_THREE/DragControls": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/controls/DragControls",
         "REQUIRE_THREE/FirstPersonControls": "https://cdn.rawgit.com/mrdoob/three.js/r124/examples/js/controls/FirstPersonControls",
@@ -212,6 +219,27 @@ require.config({
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/XLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/ColladaExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/DRACOExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/GLTFExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/MMDExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/OBJExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/PLYExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/STLExporter": {
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/DeviceOrientationControls": {

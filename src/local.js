@@ -17,6 +17,7 @@ var cdnurl = '../' + local3 + '/';
 
 var modules = [
     'examples/js/loaders',
+    'examples/js/exporters',
     'examples/js/controls',
     'examples/js/renderers',
     'examples/js/shaders'

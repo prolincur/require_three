@@ -12,6 +12,7 @@ var cdnurl = 'https://cdn.rawgit.com/mrdoob/three.js/' + revision + '/';
 
 var modules = [
     'examples/js/loaders',
+    'examples/js/exporters',
     'examples/js/controls',
     'examples/js/renderers',
     'examples/js/shaders'

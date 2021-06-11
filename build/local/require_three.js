@@ -40,6 +40,13 @@ require.config({
         "REQUIRE_THREE/VRMLoader": "../build/local/three/examples/js/loaders/VRMLoader",
         "REQUIRE_THREE/VTKLoader": "../build/local/three/examples/js/loaders/VTKLoader",
         "REQUIRE_THREE/XLoader": "../build/local/three/examples/js/loaders/XLoader",
+        "REQUIRE_THREE/ColladaExporter": "../build/local/three/examples/js/exporters/ColladaExporter",
+        "REQUIRE_THREE/DRACOExporter": "../build/local/three/examples/js/exporters/DRACOExporter",
+        "REQUIRE_THREE/GLTFExporter": "../build/local/three/examples/js/exporters/GLTFExporter",
+        "REQUIRE_THREE/MMDExporter": "../build/local/three/examples/js/exporters/MMDExporter",
+        "REQUIRE_THREE/OBJExporter": "../build/local/three/examples/js/exporters/OBJExporter",
+        "REQUIRE_THREE/PLYExporter": "../build/local/three/examples/js/exporters/PLYExporter",
+        "REQUIRE_THREE/STLExporter": "../build/local/three/examples/js/exporters/STLExporter",
         "REQUIRE_THREE/DeviceOrientationControls": "../build/local/three/examples/js/controls/DeviceOrientationControls",
         "REQUIRE_THREE/DragControls": "../build/local/three/examples/js/controls/DragControls",
         "REQUIRE_THREE/FirstPersonControls": "../build/local/three/examples/js/controls/FirstPersonControls",
@@ -212,6 +219,27 @@ require.config({
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/XLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/ColladaExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/DRACOExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/GLTFExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/MMDExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/OBJExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/PLYExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/STLExporter": {
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/DeviceOrientationControls": {
