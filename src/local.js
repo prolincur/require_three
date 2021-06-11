@@ -13,7 +13,13 @@ copydir.sync('node_modules/three', local3, {
   cover: true    // cover file when exists, default is true
 });
 
-var cdnurl = '../' + local3 + '/';
+// IMPORTANT: ENSURE THE PROVIDE THREEJS VERSION OF YOUR CHOICE
+// var revision = 'r124';
+// PROVIDE THREEJS VERSION IN package.json
+
+// IMPORTANT: ENSURE THE PROVIDE PATH OF YOUR CHOICE
+// FOLLOWING PATH IS TO EXAMPLES/LOCAL
+var cdnurl = '../../' + local3 + '/';
 
 var modules = [
     'examples/js/loaders',

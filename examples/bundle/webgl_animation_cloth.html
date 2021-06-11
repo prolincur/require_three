@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - cloth simulation</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<style>
+			body {
+				background-color: #cce0ff;
+				color: #000;
+			}
+			a {
+				color: #080;
+			}
+		</style>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
+				<script type="text/javascript">
+						require.config({
+								paths: {
+									jquery: 'https://code.jquery.com/jquery-2.2.4.min',
+									require_three: '../../build/bundle/require_three.min'
+								},
+						});
+		
+				</script>
+	</head>
+
+	<body>
+		<div id="info">Simple Cloth Simulation<br/>
+			Verlet integration with relaxed constraints<br/>
+		</div>
+
+    <script type="text/javascript">
+			require(['jquery', 'webgl_animation_cloth'], function($, webgl_animation_cloth) {
+			});
+	</script>
+	</body>
+</html>

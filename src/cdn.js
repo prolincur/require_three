@@ -6,6 +6,7 @@ var request = require('sync-request');
 var beautify = require('js-beautify').js_beautify;
 var uglify = require("uglify-js");
 
+// IMPORTANT: ENSURE THE PROVIDE THREEJS VERSION OF YOUR CHOICE
 var revision = 'r124';
 
 var cdnurl = 'https://cdn.rawgit.com/mrdoob/three.js/' + revision + '/';
