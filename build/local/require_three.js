@@ -4,6 +4,7 @@ define('REQUIRE_THREE', ['../../build/local/three/build/three.min.js'], function
 });
 require.config({
     "paths": {
+        "REQUIRE_THREE/3DMLoader": "../../build/local/three/examples/js/loaders/3DMLoader",
         "REQUIRE_THREE/3MFLoader": "../../build/local/three/examples/js/loaders/3MFLoader",
         "REQUIRE_THREE/AMFLoader": "../../build/local/three/examples/js/loaders/AMFLoader",
         "REQUIRE_THREE/AssimpLoader": "../../build/local/three/examples/js/loaders/AssimpLoader",
@@ -20,7 +21,12 @@ require.config({
         "REQUIRE_THREE/KMZLoader": "../../build/local/three/examples/js/loaders/KMZLoader",
         "REQUIRE_THREE/KTXLoader": "../../build/local/three/examples/js/loaders/KTXLoader",
         "REQUIRE_THREE/LDrawLoader": "../../build/local/three/examples/js/loaders/LDrawLoader",
+        "REQUIRE_THREE/LUT3dlLoader": "../../build/local/three/examples/js/loaders/LUT3dlLoader",
+        "REQUIRE_THREE/LUTCubeLoader": "../../build/local/three/examples/js/loaders/LUTCubeLoader",
+        "REQUIRE_THREE/LWOLoader": "../../build/local/three/examples/js/loaders/LWOLoader",
+        "REQUIRE_THREE/LottieLoader": "../../build/local/three/examples/js/loaders/LottieLoader",
         "REQUIRE_THREE/MD2Loader": "../../build/local/three/examples/js/loaders/MD2Loader",
+        "REQUIRE_THREE/MDDLoader": "../../build/local/three/examples/js/loaders/MDDLoader",
         "REQUIRE_THREE/MMDLoader": "../../build/local/three/examples/js/loaders/MMDLoader",
         "REQUIRE_THREE/MTLLoader": "../../build/local/three/examples/js/loaders/MTLLoader",
         "REQUIRE_THREE/NRRDLoader": "../../build/local/three/examples/js/loaders/NRRDLoader",
@@ -31,15 +37,19 @@ require.config({
         "REQUIRE_THREE/PRWMLoader": "../../build/local/three/examples/js/loaders/PRWMLoader",
         "REQUIRE_THREE/PVRLoader": "../../build/local/three/examples/js/loaders/PVRLoader",
         "REQUIRE_THREE/RGBELoader": "../../build/local/three/examples/js/loaders/RGBELoader",
+        "REQUIRE_THREE/RGBMLoader": "../../build/local/three/examples/js/loaders/RGBMLoader",
         "REQUIRE_THREE/STLLoader": "../../build/local/three/examples/js/loaders/STLLoader",
         "REQUIRE_THREE/SVGLoader": "../../build/local/three/examples/js/loaders/SVGLoader",
         "REQUIRE_THREE/TDSLoader": "../../build/local/three/examples/js/loaders/TDSLoader",
         "REQUIRE_THREE/TGALoader": "../../build/local/three/examples/js/loaders/TGALoader",
         "REQUIRE_THREE/TTFLoader": "../../build/local/three/examples/js/loaders/TTFLoader",
+        "REQUIRE_THREE/TiltLoader": "../../build/local/three/examples/js/loaders/TiltLoader",
+        "REQUIRE_THREE/VOXLoader": "../../build/local/three/examples/js/loaders/VOXLoader",
         "REQUIRE_THREE/VRMLLoader": "../../build/local/three/examples/js/loaders/VRMLLoader",
         "REQUIRE_THREE/VRMLoader": "../../build/local/three/examples/js/loaders/VRMLoader",
         "REQUIRE_THREE/VTKLoader": "../../build/local/three/examples/js/loaders/VTKLoader",
         "REQUIRE_THREE/XLoader": "../../build/local/three/examples/js/loaders/XLoader",
+        "REQUIRE_THREE/XYZLoader": "../../build/local/three/examples/js/loaders/XYZLoader",
         "REQUIRE_THREE/ColladaExporter": "../../build/local/three/examples/js/exporters/ColladaExporter",
         "REQUIRE_THREE/DRACOExporter": "../../build/local/three/examples/js/exporters/DRACOExporter",
         "REQUIRE_THREE/GLTFExporter": "../../build/local/three/examples/js/exporters/GLTFExporter",
@@ -47,6 +57,7 @@ require.config({
         "REQUIRE_THREE/OBJExporter": "../../build/local/three/examples/js/exporters/OBJExporter",
         "REQUIRE_THREE/PLYExporter": "../../build/local/three/examples/js/exporters/PLYExporter",
         "REQUIRE_THREE/STLExporter": "../../build/local/three/examples/js/exporters/STLExporter",
+        "REQUIRE_THREE/USDZExporter": "../../build/local/three/examples/js/exporters/USDZExporter",
         "REQUIRE_THREE/DeviceOrientationControls": "../../build/local/three/examples/js/controls/DeviceOrientationControls",
         "REQUIRE_THREE/DragControls": "../../build/local/three/examples/js/controls/DragControls",
         "REQUIRE_THREE/FirstPersonControls": "../../build/local/three/examples/js/controls/FirstPersonControls",
@@ -98,6 +109,8 @@ require.config({
         "REQUIRE_THREE/SAOShader": "../../build/local/three/examples/js/shaders/SAOShader",
         "REQUIRE_THREE/SMAAShader": "../../build/local/three/examples/js/shaders/SMAAShader",
         "REQUIRE_THREE/SSAOShader": "../../build/local/three/examples/js/shaders/SSAOShader",
+        "REQUIRE_THREE/SSRShader": "../../build/local/three/examples/js/shaders/SSRShader",
+        "REQUIRE_THREE/SSRrShader": "../../build/local/three/examples/js/shaders/SSRrShader",
         "REQUIRE_THREE/SepiaShader": "../../build/local/three/examples/js/shaders/SepiaShader",
         "REQUIRE_THREE/SobelOperatorShader": "../../build/local/three/examples/js/shaders/SobelOperatorShader",
         "REQUIRE_THREE/SubsurfaceScatteringShader": "../../build/local/three/examples/js/shaders/SubsurfaceScatteringShader",
@@ -113,6 +126,9 @@ require.config({
         "REQUIRE_THREE/WaterRefractionShader": "../../build/local/three/examples/js/shaders/WaterRefractionShader"
     },
     "shim": {
+        "REQUIRE_THREE/3DMLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
         "REQUIRE_THREE/3MFLoader": {
             "deps": ["REQUIRE_THREE"]
         },
@@ -161,7 +177,22 @@ require.config({
         "REQUIRE_THREE/LDrawLoader": {
             "deps": ["REQUIRE_THREE"]
         },
+        "REQUIRE_THREE/LUT3dlLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/LUTCubeLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/LWOLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/LottieLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
         "REQUIRE_THREE/MD2Loader": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/MDDLoader": {
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/MMDLoader": {
@@ -194,6 +225,9 @@ require.config({
         "REQUIRE_THREE/RGBELoader": {
             "deps": ["REQUIRE_THREE"]
         },
+        "REQUIRE_THREE/RGBMLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
         "REQUIRE_THREE/STLLoader": {
             "deps": ["REQUIRE_THREE"]
         },
@@ -209,6 +243,12 @@ require.config({
         "REQUIRE_THREE/TTFLoader": {
             "deps": ["REQUIRE_THREE"]
         },
+        "REQUIRE_THREE/TiltLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/VOXLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
         "REQUIRE_THREE/VRMLLoader": {
             "deps": ["REQUIRE_THREE"]
         },
@@ -219,6 +259,9 @@ require.config({
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/XLoader": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/XYZLoader": {
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/ColladaExporter": {
@@ -240,6 +283,9 @@ require.config({
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/STLExporter": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/USDZExporter": {
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/DeviceOrientationControls": {
@@ -393,6 +439,12 @@ require.config({
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/SSAOShader": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/SSRShader": {
+            "deps": ["REQUIRE_THREE"]
+        },
+        "REQUIRE_THREE/SSRrShader": {
             "deps": ["REQUIRE_THREE"]
         },
         "REQUIRE_THREE/SepiaShader": {

@@ -5,7 +5,7 @@ var path = require('path');
 var beautify = require('js-beautify').js_beautify;
 
 // IMPORTANT: ENSURE THE PROVIDE THREEJS VERSION OF YOUR CHOICE
-// var revision = 'r127';
+// var revision = 'r128';
 // PROVIDE THREEJS VERSION IN package.json
 
 // PICKED UP FROM node_modules
