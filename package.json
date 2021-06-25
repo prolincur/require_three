@@ -1,6 +1,6 @@
 {
   "name": "require_three",
-  "version": "0.125.0",
+  "version": "0.126.0",
   "main": "src/cdn.js",
   "scripts": {
     "build": "yarn build:bundle && yarn build:cdn && yarn build:local",
@@ -19,7 +19,7 @@
     "gulp-livereload": "^4.0.2",
     "js-beautify": "^1.6.8",
     "sync-request": "^4.0.1",
-    "three": "0.125.0",
+    "three": "0.126.0",
     "uglify-js": "^2.7.5",
     "webpack-stream": "^6.1.2"
   },

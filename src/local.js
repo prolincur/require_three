@@ -14,7 +14,7 @@ copydir.sync('node_modules/three', local3, {
 });
 
 // IMPORTANT: ENSURE THE PROVIDE THREEJS VERSION OF YOUR CHOICE
-// var revision = 'r125';
+// var revision = 'r126';
 // PROVIDE THREEJS VERSION IN package.json
 
 // IMPORTANT: ENSURE THE PROVIDE PATH OF YOUR CHOICE
