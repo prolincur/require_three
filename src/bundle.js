@@ -9,7 +9,7 @@ var beautify = require('js-beautify').js_beautify;
 // PROVIDE THREEJS VERSION IN package.json
 
 // PICKED UP FROM node_modules
-var cdnurl = 'three/';
+var cdnurl = '../build/local/three/';
 
 var modules = [
     'examples/js/loaders',
@@ -33,7 +33,10 @@ modules.forEach(function(m) {
 
 var out = fs.readFileSync('src/template2.js', 'utf-8');
 out = out.replace('{cdnurl}', cdnurl);
-out = out.replace('{deps}', JSON.stringify(deps));
+let list = '[\n';
+deps.forEach((d) => list += ('\t"' + d + '",\n'));
+list += ']';
+out = out.replace('{deps}', list);
 var formatted = beautify(out);
 fs.writeFileSync('src/bundlables.js', formatted, 'utf-8');
 

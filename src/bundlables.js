@@ -1,11 +1,11 @@
-define('REQUIRE_THREE', ['three/build/three.min.js'], function(THREE) {
+define('REQUIRE_THREE', ['../build/local/three/build/three.min.js'], function(THREE) {
     window.THREE = THREE;
     return THREE;
 });
 define([
+    "../build/local/three/examples/js/loaders/3DMLoader",
     "../build/local/three/examples/js/loaders/3MFLoader",
     "../build/local/three/examples/js/loaders/AMFLoader",
-    "../build/local/three/examples/js/loaders/AssimpLoader",
     "../build/local/three/examples/js/loaders/BVHLoader",
     "../build/local/three/examples/js/loaders/BasisTextureLoader",
     "../build/local/three/examples/js/loaders/ColladaLoader",
@@ -19,7 +19,12 @@ define([
     "../build/local/three/examples/js/loaders/KMZLoader",
     "../build/local/three/examples/js/loaders/KTXLoader",
     "../build/local/three/examples/js/loaders/LDrawLoader",
+    "../build/local/three/examples/js/loaders/LUT3dlLoader",
+    "../build/local/three/examples/js/loaders/LUTCubeLoader",
+    "../build/local/three/examples/js/loaders/LWOLoader",
+    "../build/local/three/examples/js/loaders/LottieLoader",
     "../build/local/three/examples/js/loaders/MD2Loader",
+    "../build/local/three/examples/js/loaders/MDDLoader",
     "../build/local/three/examples/js/loaders/MMDLoader",
     "../build/local/three/examples/js/loaders/MTLLoader",
     "../build/local/three/examples/js/loaders/NRRDLoader",
@@ -30,14 +35,18 @@ define([
     "../build/local/three/examples/js/loaders/PRWMLoader",
     "../build/local/three/examples/js/loaders/PVRLoader",
     "../build/local/three/examples/js/loaders/RGBELoader",
+    "../build/local/three/examples/js/loaders/RGBMLoader",
     "../build/local/three/examples/js/loaders/STLLoader",
     "../build/local/three/examples/js/loaders/SVGLoader",
     "../build/local/three/examples/js/loaders/TDSLoader",
     "../build/local/three/examples/js/loaders/TGALoader",
     "../build/local/three/examples/js/loaders/TTFLoader",
+    "../build/local/three/examples/js/loaders/TiltLoader",
+    "../build/local/three/examples/js/loaders/VOXLoader",
     // "../build/local/three/examples/js/loaders/VRMLLoader",
+    // "../build/local/three/examples/js/loaders/VRMLoader",
     "../build/local/three/examples/js/loaders/VTKLoader",
-    "../build/local/three/examples/js/loaders/XLoader",
+    "../build/local/three/examples/js/loaders/XYZLoader",
     "../build/local/three/examples/js/exporters/ColladaExporter",
     "../build/local/three/examples/js/exporters/DRACOExporter",
     "../build/local/three/examples/js/exporters/GLTFExporter",
@@ -45,6 +54,7 @@ define([
     "../build/local/three/examples/js/exporters/OBJExporter",
     "../build/local/three/examples/js/exporters/PLYExporter",
     "../build/local/three/examples/js/exporters/STLExporter",
+    "../build/local/three/examples/js/exporters/USDZExporter",
     "../build/local/three/examples/js/controls/DeviceOrientationControls",
     "../build/local/three/examples/js/controls/DragControls",
     "../build/local/three/examples/js/controls/FirstPersonControls",
@@ -89,13 +99,14 @@ define([
     "../build/local/three/examples/js/shaders/LuminosityShader",
     "../build/local/three/examples/js/shaders/MirrorShader",
     "../build/local/three/examples/js/shaders/NormalMapShader",
-    "../build/local/three/examples/js/shaders/OceanShaders",
     "../build/local/three/examples/js/shaders/ParallaxShader",
     "../build/local/three/examples/js/shaders/PixelShader",
     "../build/local/three/examples/js/shaders/RGBShiftShader",
     "../build/local/three/examples/js/shaders/SAOShader",
     "../build/local/three/examples/js/shaders/SMAAShader",
     "../build/local/three/examples/js/shaders/SSAOShader",
+    "../build/local/three/examples/js/shaders/SSRShader",
+    "../build/local/three/examples/js/shaders/SSRrShader",
     "../build/local/three/examples/js/shaders/SepiaShader",
     "../build/local/three/examples/js/shaders/SobelOperatorShader",
     "../build/local/three/examples/js/shaders/SubsurfaceScatteringShader",
@@ -108,5 +119,5 @@ define([
     "../build/local/three/examples/js/shaders/VerticalTiltShiftShader",
     "../build/local/three/examples/js/shaders/VignetteShader",
     "../build/local/three/examples/js/shaders/VolumeShader",
-    "../build/local/three/examples/js/shaders/WaterRefractionShader"
-  ], function() {});
+    "../build/local/three/examples/js/shaders/WaterRefractionShader",
+], function() {});
